@@ -51,10 +51,12 @@ font-family: 'Montserrat', sans-serif;
     font-size: 2em;
     font-style: italic;
 }
+body{
+    background-color: rgb(67,86,128);
 
+}
 .project-section{
-    height: 1200px;
-    background-color: rgb(67,86,128)
+    height: auto;
 }
 .p-section-header{
     padding: 20px;
@@ -73,10 +75,12 @@ font-family: 'Montserrat', sans-serif;
     margin: 0% 5%;
 }
 .project-tile{
-    margin: 20px;
+    margin: 10%;
     margin-top: 50px;
     background-color: rgb(46,56,66);
     border-radius: 5px;
+    width: 80%;
+    height: auto;
 }
 .project-tile img{
     width: 100%;
@@ -97,7 +101,7 @@ font-family: 'Montserrat', sans-serif;
 
 
 #contact{
-    background-color: rgb(44,45,48);
+    background-color: rgb(46,56,66);
     height: 400px;
     color: white;
     font-family: 'Montserrat', sans-serif;
@@ -116,8 +120,15 @@ font-family: 'Montserrat', sans-serif;
 .pre-footer-section a{
     text-decoration: none;
     color: white;
+    font-size: 1.2em;
     display: inline-flex;
+    vertical-align: baseline;
     padding: 20px;
+}
+.pre-footer-section i{
+    padding-right: 5px;
+    position: relative;
+    line-height: normal;
 }
 .red-hr{
     color: rgb(206,26,64);
@@ -132,7 +143,22 @@ footer a, p{
 }
 footer{
     padding: 30px;
-    background-color: rgb(44,45,48);
+    background-color: rgb(46,56,66);
     color: white;
     font-family: 'Montserrat', sans-serif;
+    position: static;
+}
+.footer-section{
+    display: flex;
+}
+.footer-text{
+    width: 70%;
+}
+.footer-copyright{
+    width: 30%;
+}
+.footer-copyright i{
+    position: relative;
+    padding-left: 5px;
+    line-height: normal;
 }
