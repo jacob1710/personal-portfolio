@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css?family=Lato|Montserrat&display=swap');
+
+*{
+    margin: 0;
+}
+
+/*
+font-family: 'Lato', sans-serif;
+font-family: 'Montserrat', sans-serif;
+*/
+
+.navbar{
+    background-color: rgb(190,48,68);
+    height: 50px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+}
+.navbar ul{
+    list-style-type: none;
+    text-align: right;
+}
+.navbar li{
+    display: inline-flex;
+}
+.navbar a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2em;
+    padding: 12px;
+    vertical-align: middle;
+
+}
+#welcome-section{
+    background-color: rgb(44,45,48);
+    height: 600px;
+}
+.welcome-text{
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+}
+.welcome-text h1{
+    color: white;
+    padding: 10px;
+    padding-top: 200px;
+    font-size: 3em;
+}
+.welcome-text p{
+    color: rgb(178,48,66);
+    font-size: 2em;
+    font-style: italic;
+}
+
+.project-section{
+    height: 1200px;
+    background-color: rgb(67,86,128)
+}
+.p-section-header{
+    padding: 20px;
+}
+
+.project-section h2{
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2em;
+    text-align: center;
+    padding: 0px;
+}
+.project-section hr{
+    color: white;
+    width: 90%;
+    margin: 0% 5%;
+}
+.project-tile{
+    margin: 20px;
+    margin-top: 50px;
+    background-color: rgb(46,56,66);
+    border-radius: 5px;
+}
+.project-tile img{
+    width: 100%;
+    padding: 0% 0%;
+    height: auto;
+}
+.project-tile p {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2em;
+    padding: 12px;
+    vertical-align: middle;
+    text-align: center;
+}
+.project-tile a{
+    text-decoration: none;
+}
+
+#contact{
+    background-color: rgb(44,45,48);
+    height: 600px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
