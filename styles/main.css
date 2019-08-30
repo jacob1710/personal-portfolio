@@ -95,9 +95,44 @@ font-family: 'Montserrat', sans-serif;
     text-decoration: none;
 }
 
+
 #contact{
     background-color: rgb(44,45,48);
-    height: 600px;
+    height: 400px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+.pre-footer-section{
+    padding: 20px;
+    text-align: center;
+}
+.pre-footer-section h2{
+    font-size: 3em;
+    padding: 20px;
+}
+.pre-footer-section p {
+    margin-bottom: 50px;
+}
+.pre-footer-section a{
+    text-decoration: none;
+    color: white;
+    display: inline-flex;
+    padding: 20px;
+}
+.red-hr{
+    color: rgb(206,26,64);
+    height: 2px;
+    background-color: rgb(206,26,64);
+}
+footer a, p{
+    text-decoration: none;
+    color: white;
+    display: flexbox;
+    padding: 0px 20px;
+}
+footer{
+    padding: 30px;
+    background-color: rgb(44,45,48);
     color: white;
     font-family: 'Montserrat', sans-serif;
 }
