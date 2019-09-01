@@ -15,6 +15,7 @@ font-family: 'Montserrat', sans-serif;
     width: 100%;
     position: fixed;
     top: 0;
+    z-index: 10000;
 }
 .navbar ul{
     list-style-type: none;
@@ -34,7 +35,7 @@ font-family: 'Montserrat', sans-serif;
 }
 #welcome-section{
     background-color: rgb(44,45,48);
-    height: 600px;
+    height: 100vh;
 }
 .welcome-text{
     font-family: 'Lato', sans-serif;
@@ -43,8 +44,8 @@ font-family: 'Montserrat', sans-serif;
 .welcome-text h1{
     color: white;
     padding: 10px;
-    padding-top: 200px;
-    font-size: 3em;
+    padding-top: 40vh;
+    font-size: 3.5em;
 }
 .welcome-text p{
     color: rgb(178,48,66);
@@ -62,17 +63,17 @@ body{
     padding: 20px;
 }
 
-.project-section h2{
+.p-section-header h2{
     color: white;
     font-family: 'Montserrat', sans-serif;
     font-size: 2em;
     text-align: center;
     padding: 0px;
 }
-.project-section hr{
+.p-section-header hr{
     color: white;
     width: 90%;
-    margin: 0% 5%;
+    margin: 1% 5%;
 }
 .project-tile{
     margin: 10%;
@@ -81,7 +82,15 @@ body{
     border-radius: 5px;
     width: 80%;
     height: auto;
+    transition: transform .15s;
 }
+.project-tile:hover{
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+
 .project-tile img{
     width: 100%;
     padding: 0% 0%;
@@ -124,6 +133,11 @@ body{
     display: inline-flex;
     vertical-align: baseline;
     padding: 20px;
+    transition: transform .1s;
+}
+.pre-footer-section a:hover{
+    transform: scale(1.1);
+
 }
 .pre-footer-section i{
     padding-right: 5px;
@@ -140,6 +154,12 @@ footer a, p{
     color: white;
     display: flexbox;
     padding: 0px 20px;
+}
+a.anchor {
+    display: block;
+    position: relative;
+    top: -50px;
+    visibility: hidden;
 }
 footer{
     padding: 30px;
@@ -162,3 +182,42 @@ footer{
     padding-left: 5px;
     line-height: normal;
 }
+
+@media only screen and (min-width: 768px) {
+    .project-section{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .project-tile{
+        width: 40%;
+        margin: 5%;
+        margin-top: 50px;
+    }
+    .project-tile img{
+        width: 100%;
+        height: 80%;
+        padding: 0% 0%;
+        object-fit: cover;
+    }
+  }
+  @media only screen and (min-width: 1024px) {
+    .project-section{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: center;
+    }
+    .project-tile{
+        width: 28%;
+        margin-top: 50px;
+        margin: 2%;
+    }
+    .project-tile img{
+        width: 100%;
+        height: 80%;
+        padding: 0% 0%;
+        object-fit: cover;
+    }
+  }

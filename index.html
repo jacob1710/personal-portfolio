@@ -11,9 +11,9 @@
 <body>
     <nav id="navbar" class="navbar">
         <ul>
-            <li><a href="">About</a></li>
-            <li><a href="">Work</a></li>
-            <li><a href="">Contact</a></li>
+            <li><a href="#welcome-section">About</a></li>
+            <li><a href="#projects-section">Work</a></li>
+            <li><a href="#contact-section">Contact</a></li>
         </ul>
     </nav>
     <section id="welcome-section">
@@ -22,12 +22,13 @@
             <p>a web developer</p>
         </div>
     </section>
+    <a class="anchor" id="projects-section"></a>
     <section id="projects">
+        <div class="p-section-header">
+            <h2>These are some of my projects</h2>
+            <hr>
+        </div>
         <div class="project-section">
-            <div class="p-section-header">
-                <h2>These are some of my projects</h2>
-                <hr>
-            </div>
             <div class="project-tile">
                 <a href="https://codepen.io/freeCodeCamp/full/zNqgVx">
                     <img src="https://raw.githubusercontent.com/freeCodeCamp/cdn/master/build/testable-projects-fcc/images/tribute.jpg" alt="tribute-img">
@@ -40,17 +41,42 @@
                     <p>Random Quote Machine</p>
                 </a>
             </div>
+            <div class="project-tile">
+                <a href="https://codepen.io/freeCodeCamp/full/wgGVVX">
+                    <img src="https://raw.githubusercontent.com/freeCodeCamp/cdn/master/build/testable-projects-fcc/images/calc.png" alt="tribute-img">
+                    <p>JavaScript Calculator</p>
+                </a>
+            </div>
+            <div class="project-tile">
+                <a href="https://codepen.io/freeCodeCamp/full/mVEJag">
+                    <img src="https://raw.githubusercontent.com/freeCodeCamp/cdn/master/build/testable-projects-fcc/images/map.jpg" alt="tribute-img">
+                    <p>Map Data Across the Globe</p>
+                </a>
+            </div>
+            <div class="project-tile">
+                <a href="https://codepen.io/freeCodeCamp/full/wGqEga">
+                    <img src="https://raw.githubusercontent.com/freeCodeCamp/cdn/master/build/testable-projects-fcc/images/wiki.png" alt="tribute-img">
+                    <p>Wikipedia Viewer</p>
+                </a>
+            </div>
+            <div class="project-tile">
+                <a href="https://codepen.io/freeCodeCamp/full/KzXQgy">
+                    <img src="https://raw.githubusercontent.com/freeCodeCamp/cdn/master/build/testable-projects-fcc/images/tic-tac-toe.png" alt="tribute-img">
+                    <p>Tic Tac Toe Game</p>
+                </a>
+            </div>
         </div>
     </section>
+    <a class="anchor" id="contact-section"></a>
     <section id="contact">
         <div class="pre-footer-section">
             <h2>Let's work together...</h2>
             <p>How do you take your coffee?</p>
-            <a href="https://facebook.com/freecodecamp"><i class="fab fa-facebook-square"></i><div>Facebook</div></a>
-            <a href="https://github.com/freecodecamp"><i class="fab fa-github-square"></i><div>GitHub</div></a>
-            <a href="https://twitter.com/freecodecamp"><i class="fab fa-twitter-square"></i><div>Twitter</div></a>
-            <a href="mailto:example@example.com"><i class="fas fa-at"></i><div>Send a mail</div></a>
-            <a href="tel:555-555-5555"><i class="fas fa-mobile-alt"></i><div>Call me</div></a>
+            <a href="https://facebook.com/freecodecamp" target="_blank"><i class="fab fa-facebook-square"></i><div>Facebook</div></a>
+            <a href="https://github.com/freecodecamp" id="profile-link" target="_blank"><i class="fab fa-github-square"></i><div>GitHub</div></a>
+            <a href="https://twitter.com/freecodecamp" target="_blank"><i class="fab fa-twitter-square"></i><div>Twitter</div></a>
+            <a href="mailto:example@example.com" target="_blank"><i class="fas fa-at"></i><div>Send a mail</div></a>
+            <a href="tel:555-555-5555" target="_blank"><i class="fas fa-mobile-alt"></i><div>Call me</div></a>
         </div>
     </section>
     <hr class="red-hr">
@@ -60,7 +86,6 @@
                 <p> **This is just a fake portfolio. All the projects and contact details given are not real. </p>
             </div>
             <div class="footer-copyright">
-                <a href="">© Created for freeCodeCamp<i class="fab fa-free-code-camp"></i></a>
             </div>
         </div>
     </footer>
